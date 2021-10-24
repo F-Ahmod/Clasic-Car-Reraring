@@ -9,6 +9,11 @@ import Home from './Pages/Home/Home/Home';
 import Services from './Pages/Home/Services/Services';
 import About from './Pages/About/About';
 import Login from './Pages/Login/Login';
+import SingUp from './Pages/SingUp/SingUp';
+import AddService from './Pages/AddService/AddService';
+import AddToBook from './Pages/AddToBook/AddToBook';
+import Managebook from './Pages/Managebook/Managebook';
+
 
 
 
@@ -35,8 +40,24 @@ function App() {
         <Route exact path="/about">
         <About></About>
         </Route>
+        <Route path="/addToBook/:id">
+          <AddToBook></AddToBook>
+        </Route>
+        <Route path="/manageBook">
+          <Managebook></Managebook>
+        </Route>
+        <Route exact path="manageBook">
+          <Managebook></Managebook>
+        </Route>
+
+        <Route path="/AddService">
+          <AddService></AddService>
+        </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/singup">
+         <SingUp></SingUp>
         </Route>
 
       </Switch>
